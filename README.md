@@ -16,7 +16,7 @@ It also provides faster `pinMode()` and `digitalRead()` functions as well as it 
 
 
 # Speed
-For a 16 MHz Uno digitalWrite() is speed up from 6280 ns to 125 ns, able to generate a 8 MHz signal instead of 1MHz
+For a 16 MHz Uno digitalWrite() is speed up from 5.8 µs to 125 ns, able to generate a 4 MHz signal instead of 86 kHz.
 More info in: [/NOTES/NOTES.md](https://github.com/NicksonYap/digitalWriteFast/blob/master/NOTES/NOTES.md)
 
 # Usage
@@ -34,25 +34,31 @@ Parameters:
 * `state` is weather pin is to be set `HIGH` or `LOW`
 * `mode` is weather pin is to be set `INPUT` or `OUTPUT` or `INPUT_PULLUP`
 
+# Example
+This is the waveform generated with the Timing example.
+![Timing example signal](https://github.com/ArminJo/digitalWriteFast/blob/master/pictures/DigitalWriteFastExample.bmp)
+
 # Detection
 Defining `THROW_ERROR_IF_NOT_FAST` would cause the macro to return an error during compilation, if the parameter is a variable and thus regular digital* functions must be called.
 This notifies the programmer the specific area where code is still slow.
 
 # Compatibility
-* Arduino Due
-* Arduino Zero
+* Arduino Uno, Nano etc.
+* Arduino Leonardo
 * Arduino Mega
 * Arduino with ATmega644 or Atmega644P chip
-* Arduino Leonardo
-* Arduino Uno, Nano etc.
+* Arduino with ATmega4809 chip
+* Arduino with ATtiny chip
+
 
 # Revision History
 ### Version 1.1.0
 - Added TEENSYDUINO support.
+- Added THROW_ERROR_IF_NOT_FAST functionality.
 - Removed unnecessary compare `> 0`.
 - Added Guard `&& defined(__digitalPinToPINReg)` etc.
 - Changed `ifndef` to `if !defined()`.
 
 # Reference
-This documentation is based on https://github.com/NicksonYap/digitalWriteFast/README.md
+This documentation is based on https://github.com/NicksonYap/digitalWriteFast/
 

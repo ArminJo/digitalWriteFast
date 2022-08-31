@@ -1,4 +1,4 @@
-3-Clause BSD License (https://opensource.org/licenses/BSD-3-Clause)
+BSD 3-Clause License (https://opensource.org/licenses/BSD-3-Clause)
 
 Copyright (c) 2011-2020 Watterott electronic (www.watterott.com)
 Copyright (c) 2020-2022 Armin Joachimsmeyer et al.
