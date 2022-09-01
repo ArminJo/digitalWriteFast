@@ -9,6 +9,18 @@
     "type": "git",
     "url": "https://github.com/ArminJo/digitalWriteFast"
   },
+  "exclude": "pictures",
+  "authors" :
+  [
+     {
+       "name":"Armin Joachimsmeyer",
+       "email": "armin.arduino@gmail.com",
+       "maintainer": true
+     },
+     {
+       "name":"Andreas Watterott"
+     }
+  ],
   "license": "BSD-3-Clause",
   "frameworks": "arduino",
   "platforms": "atmelavr",
