@@ -66,6 +66,12 @@ This is the waveform generated with the [Timing example](https://github.com/Armi
 
 
 # Revision History
+### Version 1.2.0
+- Removed warning of non existent PORTA etc.
+- Added ATtiny1614.
+- Fix attiny x4 pinout
+- Added __digitalPinToBit for ATmega16.
+
 ### Version 1.1.0
 - Added TEENSYDUINO support.
 - Added THROW_ERROR_IF_NOT_FAST functionality.
