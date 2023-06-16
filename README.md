@@ -54,7 +54,7 @@ For a 16 MHz Uno digitalWrite() is speed up from 5.8 &micro;s to 125 ns, able to
 More info in: [/NOTES/NOTES.md](https://github.com/NicksonYap/digitalWriteFast/blob/master/NOTES/NOTES.md)
 
 This is the waveform generated with the [Timing example](https://github.com/ArminJo/digitalWriteFast/blob/master/examples/Timing/Timing.ino#L81).
-![Timing example signal](https://github.com/ArminJo/digitalWriteFast/blob/master/pictures/DigitalWriteFastExample.bmp)
+![Timing example signal](https://github.com/ArminJo/digitalWriteFast/blob/master/pictures/DigitalWriteFastTiming.bmp)
 
 # Compatibility
 * Arduino Uno, Nano etc.
@@ -66,6 +66,9 @@ This is the waveform generated with the [Timing example](https://github.com/Armi
 
 
 # Revision History
+### Version 1.2.1
+- Fixed preprocessor bug for ATtiny84.
+
 ### Version 1.2.0
 - Removed warning of non existent PORTA etc.
 - Added ATtiny1614.
