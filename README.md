@@ -19,9 +19,14 @@ Available as [Arduino library "digitalWriteFast"](https://www.arduinolibraries.i
 
 [![Button Install](https://img.shields.io/badge/Install-brightgreen?logoColor=white&logo=GitBook)](https://www.ardu-badge.com/digitalWriteFast)
  &nbsp; &nbsp; 
-[![Button Changelog](https://img.shields.io/badge/Changelog-blue?logoColor=white&logo=AzureArtifacts)](https://github.com/ArminJo/digitalWriteFast#revision-history)
+[![Button Changelog](https://img.shields.io/badge/Changelog-blue?logoColor=white&logo=AzureArtifacts)](https://github.com/ArminJo/digitalWriteFast?tab=readme-ov-file#revision-history)
 </div>
 
+#### If you find this library useful, please give it a star.
+
+&#x1F30E; [Google Translate](https://translate.google.com/translate?sl=en&u=https://github.com/ArminJo/digitalWriteFast)
+
+<br/>
 
 **This is a fork of the subtree https://github.com/watterott/Arduino-Libs/tree/master/digitalWriteFast.**
 
@@ -44,10 +49,13 @@ Parameters:
 * `state` is weather pin is to be set `HIGH` or `LOW`
 * `mode` is weather pin is to be set `INPUT` or `OUTPUT` or `INPUT_PULLUP`
 
+<br/>
+
 # Correct usage detection
 Defining `THROW_ERROR_IF_NOT_FAST` would cause the macro to return an error during compilation, if the parameter is a variable and thus regular digital* functions must be called.
 This notifies the programmer the specific line where code is still slow.
 
+<br/>
 
 # Speed
 For a 16 MHz Uno digitalWrite() is speed up from 5.8 &micro;s to 125 ns, able to generate a 4 MHz signal instead of 86 kHz.
@@ -64,6 +72,8 @@ This is the waveform generated with the [Timing example](https://github.com/Armi
 * Arduino with ATmega4809 chip
 * Arduino with ATtiny chip
 
+If you use **megaTinyCore**, you cannot use "#include digitalWriteFast.h" because megaTinyCore has it own digitalWriteFast function set, except digitalToggleFast().
+<br/>
 
 # Revision History
 ### Version 1.2.1
@@ -84,5 +94,3 @@ This is the waveform generated with the [Timing example](https://github.com/Armi
 
 # Reference
 This documentation is based on https://github.com/NicksonYap/digitalWriteFast/
-
-#### If you find this library useful, please give it a star.
