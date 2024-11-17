@@ -56,7 +56,7 @@ jobs:
             platform-url: https://raw.githubusercontent.com/ArminJo/DigistumpArduino/master/package_digistump_index.json
 
 #          - arduino-boards-fqbn: ATTinyCore:avr:attinyx5:chip=85,clock=1internal
-#            platform-url: http://drazzy.com/package_drazzy.com_index.json
+#            platform-url: https://drazzy.good-enough.cloud/package_drazzy.com_index.json
 
       # Do not cancel all jobs / architectures if one job fails
       fail-fast: true
