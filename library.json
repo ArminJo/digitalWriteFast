@@ -23,7 +23,7 @@
   "export":
   {
     "exclude":
-	[
+    [
       ".github",
       "pictures"
     ]
