@@ -78,6 +78,7 @@ If you use **megaTinyCore**, you cannot use "#include digitalWriteFast.h" becaus
 # Revision History
 ### Version 1.2.1
 - Fixed preprocessor bug for ATtiny84.
+- Support for megaTinyCore.
 
 ### Version 1.2.0
 - Removed warning of non existent PORTA etc.
