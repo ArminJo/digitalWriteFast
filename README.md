@@ -76,6 +76,9 @@ If you use **megaTinyCore**, you cannot use "#include digitalWriteFast.h" becaus
 <br/>
 
 # Revision History
+### Version 1.3.0
+- Functions are single-statement safe.
+
 ### Version 1.2.1
 - Fixed preprocessor bug for ATtiny84.
 - Support for megaTinyCore.
